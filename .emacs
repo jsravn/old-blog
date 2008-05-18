@@ -66,7 +66,8 @@
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
 (add-hook 'lua-mode-hook 'turn-on-font-lock)
 (add-hook 'lua-mode-hook 'hs-minor-mode)
-  
+(add-hook 'lua-mode-hook '(lambda () (setq lua-indent-level 2)))
+
 ;;ruby
 ;(load-file "~/ruby-mode.el")
 ;(setq auto-mode-alist  (cons '("\\.rb$" . ruby-mode) auto-mode-alist))
@@ -79,7 +80,7 @@
 ;(require 'mmm-auto)
 ;(setq mmm-global-mode 'maybe)
 
-;(mmm-add-group 
+;(mmm-add-group
 ; 'html-ruby
 ; '((eruby-line
 ;    :submode ruby-mode
