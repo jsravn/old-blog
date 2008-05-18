@@ -1,0 +1,61 @@
+James S. Ravn
+
+949-690-2903
+james*ravn^gmail*com (replace * with . and ^ with @)
+
+Education: B.S. Computer Science and Engineering. University of California, Los Angeles (2005). 3.5 GPA.
+Graduate computer science classes at DePaul University (2006-2007). 4.0 GPA.
+
+Professional: Member of IEEE Computer Society and Association for Computing Machinery.
+
+  Skills Overview
+
+* Programming: C, Ruby, C#, Java
+
+* Technologies: Ruby on Rails, ASP, .NET, Web 2.0, Databases, REST
+
+* Practices: Test driven development, Version control, Design patterns, UML
+
+* Additional: Data mining and analysis, Discrete event simulation, Monte Carlo
+
+  Experience
+
+Senior Software Engineer, Motorola Mobile Devices (Libertyville, IL)
+Jan. 2006 - Current
+
+* Rated in the top 10% of the company in my annual performance review. Received a fast promotion to Senior Software Engineer after 10 months with the company, a position typically reserved for someone with 2-3 years of experience.
+
+* Created a web tool to automate the approval process for terminating and duplicating software defects. Worked closely with my customers and used an iterative style of development where new changes were made public daily.
+
+* Created an automated defect tracking tool to work with a legacy database missing key metrics. Created a RESTful web front end, allowing data to be accessed in many formats.
+
+* Adapted a single file ASP tool into a web suite of data mining tools organized by the Model-View-Controller design pattern. These tools use sophisticated SQL queries for legacy databases and produce Excel files with charts and data.
+
+* Created an automated web based system for managing defect backlog plans. It is used successfully on our Linux/Java and 3G cell phones.
+
+* Co-designed and implemented several Excel tools for software defect and ship date estimation that have been used successfully on our Linux/Java and 3G cell phones. Learned many statistical techniques in a short time frame, including regression analysis, queuing theory and Markov chains.
+
+* Created many Python & Ruby scripts for use by team members to automate data mining tasks. Created batch files to automate the deployment of Ruby on Rails websites to an IIS/Windows Server.
+
+* Co-led several improvement projects, including user trials, test phase analysis, and phone memory management.
+
+Software Engineer, Signal Transport (Irvine, CA)
+Sept. 2005 - Jan. 2006
+
+* Designed and implemented a public website for a new product line using Ruby on Rails.
+
+Extra-curricular
+
+* Added support for the Linux kernel RTC in a C language open source game client.
+
+* Original co-creator of the Autocomplete Manager, a Javascript Firefox addon with 100,000+ downloads.
+
+* Implemented zlib compression of a telnet stream in C for an open source MUD, following the MCCP protocol.
+
+* Implemented database support using the MySQL C library, replacing the legacy flat file system for an open source MUD.
+
+* Created a simple RISC CPU on a Xilinx FPGA and developed several assembly programs for it, such as quick sort.
+
+* Created a compiler for a mini Java language using JavaCC, involving intermediary language translation steps and grammars.
+
+* Implemented a Blackjack AI program in Ruby using the temporal difference backpropagation learning algorithm.
