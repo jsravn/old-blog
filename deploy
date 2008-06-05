@@ -1,0 +1,2 @@
+#!/bin/bash
+git push && ssh deathstar 'cd /var/www && git pull'
