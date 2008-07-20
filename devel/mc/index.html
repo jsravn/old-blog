@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>Simple Monte Carlo Framework in C</title>
+</head>
+
+<body>
+
+<h2>Introduction</h2>
+<p>
+I created this framework to support rapid development of Monte Carlo
+simulations. It can be used in all kinds of numeric analysis. See the
+<a href="http://git.jsravn.com/?p=mc.git;a=blob_plain;f=README;hb=HEAD">
+README</a> for more detailed information on its use.
+</p>
+<h2>Example</h2>
+<p>
+Let's say you've been asked to come up with a failure estimate for this scenario:
+</p>
+<ul>
+  <li>Flash ROM size of 1024 blocks</li>
+  <li>Consists of many segments of varying block sizes</li>
+  <li>10 to 15 randomly located blocks are bad</li>
+  <li>Flashing fails if any segment has 2 or more bad blocks</li>
+</ul>
+<p>
+An estimate for the failure rate is trivial to get using Monte Carlo. Simply write a function that implements this scenario:
+</p>
+<ol>
+  <li>Create an array of 1024 elements</li>
+  <li>Mark between 10 and 15 elements as bad (using mc_gen_number(10, 15))</li>
+  <li>Shuffle the 1024 elements</li>
+  <li>Step through each segment of the array, see if any has 2 or more
+  bad blocks</li>
+</ol>
+If a failure occurs, have the function return 1.0. Otherwise, return
+0.0. That's it. Plug it into the Monte Carlo framework and see what mu
+ends up being. This is your average failure rate.
+</ol>
+<h2>Contact and mailing lists</h2>
+<p>
+Please send any questions, bugs, or patches to the mailing
+list: <em>mc-devel at lists.jsravn.com</em>
+(<a href="http://lists.jsravn.com/pipermail/mc-devel/">archives</a>).
+</p>
+<h2>Download</h2>
+<ul>
+<li><a href="mc-0.1.2.tbz2">MC v0.1.2</a> 
+  (md5: e0e73d4ca844e08f7e6a8ee79d10f8fb)
+</li>
+</ul>
+<p>
+Grab the latest development version using git:
+</p>
+<pre>
+        git clone git://git.jsravn.com/mc.git
+</pre>
+<p>
+Browse the source tree at <a href="http://git.jsravn.com/mc.git">git.jsravn.com/mc.git</a>.
+</p>
+
+<hr />
+<p><small>
+Last updated 2008-07-20.
+You can contact me at <em>james.ravn at gmail.com</em>.
+<br />
+<a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.jsravn.com%2F">
+    Validate as XHTML 1.0
+  </a>
+</small></p>
+
+</body>
+
+</html>
