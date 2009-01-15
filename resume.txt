@@ -1,24 +1,24 @@
 James S. Ravn
 
 949-690-2903
-james.ravn at gmail.com
+james.ravn@gmail.com
 
-Please contact for address
+Please contact for address.
 
 Education: B.S. Computer Science and Engineering. University of California, 
 Los Angeles (2005). 3.5 GPA.
-Graduate computer science classes at DePaul University (2006-2007). 4.0 GPA.
-
-Professional: Member of IEEE Computer Society and Association for Computing 
-Machinery.
+Graduate computer science classes at DePaul University (5 classes, 2006-2008). 
+4.0 GPA.
 
   Skills Overview
 
 * Programming: C, Ruby, Java
 
-* Technologies: Ruby on Rails, ASP, .NET, Web 2.0, Databases, REST
+* Technologies: Ruby on Rails, ASP, .NET, Web 2.0, AJAX, CSS, Databases, SQL, 
+  REST
 
-* Practices: Test driven development, Version control, Design patterns, UML
+* Practices: Test and behavior driven development, Version control, Design 
+  patterns, UML
 
 * Additional: Data mining and analysis, Discrete event simulation, Monte Carlo
 
@@ -34,58 +34,65 @@ Jan. 2006 - Current
 
 * Created a web tool to automate the approval process for terminating and 
   duplicating software defects. Worked closely with my customers and used an 
-  iterative style of development where new changes were made public daily.
+  iterative style of development, releasing changes early and often. (Ruby on 
+  Rails)
 
-* Created an automated defect tracking tool to work with a legacy database 
-  missing key metrics. Created a RESTful web front end, allowing data to be 
-  accessed in many formats.
+* Created a defect tracking tool to work with a legacy database missing key 
+  metrics. Created a RESTful web front end, allowing data to be accessed in 
+  many formats in a standard way. (ASP, Ruby on Rails)
 
 * Adapted a single file ASP tool into a web suite of data mining tools 
   organized by the Model-View-Controller design pattern. These tools use 
   sophisticated SQL queries for legacy databases and produce Excel files with 
-  charts and data.
+  charts and data. (ASP)
 
 * Created an automated web based system for managing defect backlog plans. It 
-  is used successfully on our Linux/Java and 3G cell phones.
+  is used successfully on our Linux/Java and 3G cell phones. (ASP)
 
 * Co-designed and implemented several Excel tools for software defect and ship 
   date estimation that have been used successfully on our Linux/Java and 3G 
   cell phones. Learned many statistical techniques in a short time frame, 
-  including regression analysis, queuing theory and Markov chains.
+  including regression analysis, queuing theory and Markov chains. (Excel, 
+  Minitab)
 
 * Created many Python & Ruby scripts for use by team members to automate data 
   mining tasks. Created batch files to automate the deployment of Ruby on 
-  Rails websites to an IIS/Windows Server.
+  Rails websites to an IIS/Windows Server. (Python, Ruby)
 
-* Co-led several improvement projects, including user trials, test phase 
-  analysis, and phone memory management.
+* Co-led improvement projects for user trials and formal testing.
+
+* Data mining and analysis of various data sources to support data driven 
+  decisions by product managers. Data sources include Oracle, MySQL, MS SQL, 
+  ldap, ClearDDTS, and HTML scraping.
 
 Software Engineer, Signal Transport (Irvine, CA)
 Sept. 2005 - Jan. 2006
 
-* Designed and implemented a public website for a new product line using Ruby 
-  on Rails.
+* Designed and implemented a public website for a new product line. (Ruby on 
+  Rails)
 
 Extra-curricular
 
-* Added support for the Linux kernel RTC in a C language open source game 
-  client.
+* Added support for the Linux kernel RTC in an open source Quakeworld client. 
+  (C)
 
-* Co-creator of the Autocomplete Manager, a Javascript Firefox addon with 
-  100,000+ downloads.
+* Co-creator of the Autocomplete Manager, a Firefox addon with 100,000+ 
+  downloads. (Javascript, XUL)
 
-* Implemented zlib compression of a telnet stream in C for an open source MUD, 
-  following the MCCP protocol.
+* Implemented zlib compression of a telnet stream for an open source MUD, 
+  following the MCCP protocol. (C)
 
 * Implemented database support using the MySQL C library, replacing the legacy 
-  flat file system for an open source MUD.
+  flat file system for an open source MUD. (C)
 
 * Created a simple RISC CPU on a Xilinx FPGA and developed several assembly 
-  programs for it, such as quick sort.
+  programs for it, such as quick sort. (Assembly)
 
-* Created a compiler for a mini Java language using JavaCC, involving 
-  intermediary language translation steps and grammars.
+* Created a compiler for a mini Java language using JavaCC, involving language 
+  translation steps and grammars. (Java)
 
-* Implemented a Blackjack AI program in Ruby using the temporal difference 
-  backpropagation learning algorithm.
+* Implemented a Blackjack AI program using temporal difference backpropagation 
+  learning on a neural net. (Ruby)
+
+* Created a simple monte carlo/discrete event simulation framework. (C)
 
