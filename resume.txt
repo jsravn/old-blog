@@ -14,8 +14,8 @@ Graduate computer science classes at DePaul University (5 classes, 2006-2008).
 
 * Programming: C, Ruby, Java
 
-* Technologies: Ruby on Rails, ASP, .NET, Web 2.0, AJAX, CSS, Databases, SQL, 
-  REST
+* Technologies: Ruby on Rails, ASP, .NET, AJAX, CSS, Databases, SQL, REST, 
+  Concurrency
 
 * Practices: Test and behavior driven development, Version control, Design 
   patterns, UML
@@ -94,5 +94,6 @@ Extra-curricular
 * Implemented a Blackjack AI program using temporal difference backpropagation 
   learning on a neural net. (Ruby)
 
-* Created a simple monte carlo/discrete event simulation framework. (C)
+* Created an open source monte carlo/discrete event simulation library. (C, 
+  Java)
 
