@@ -14,7 +14,7 @@ Graduate computer science classes at DePaul University (5 classes, 2006-2008).
 
 * Programming: C, Ruby, Java
 
-* Technologies: Ruby on Rails, ASP, .NET, AJAX, CSS, Databases, SQL, REST, 
+* Technologies: Ruby on Rails, ASP, AJAX, CSS, Databases, SQL, REST, 
   Concurrency
 
 * Practices: Test and behavior driven development, Version control, Design 
@@ -57,7 +57,7 @@ Jan. 2006 - Current
 
 * Created many Python & Ruby scripts for use by team members to automate data 
   mining tasks. Created batch files to automate the deployment of Ruby on 
-  Rails websites to an IIS/Windows Server. (Python, Ruby)
+  Rails websites to an IIS/Windows Server. (Python, Ruby, MS Batch)
 
 * Co-led improvement projects for user trials and formal testing.
 

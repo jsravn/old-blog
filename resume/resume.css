@@ -1,11 +1,12 @@
  
 /* start css.sty */
-.pcrr8t-{font-weight: bold;}
-.phvr8t-{ font-family: sans-serif;}
-.phvr8t-{ font-family: sans-serif;}
-.phvr8t-x-x-172{font-size:172%; font-family: sans-serif;}
-.phvr8t-x-x-172{ font-family: sans-serif;}
-.phvro8t-{ font-family: sans-serif;    font-style: oblique;}
+.ptmr7t-{font-family: monospace;}
+.pcrr7t-{font-family: monospace;}
+.phvr7t-{ font-family: sans-serif;}
+.phvr7t-{ font-family: sans-serif;}
+.phvr7t-x-x-172{font-size:172%; font-family: sans-serif;}
+.phvr7t-x-x-172{ font-family: sans-serif;}
+.phvro7t-{font-family:sans-serif; font-style:oblique;}
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }
 p.nopar { text-indent: 0em; }
