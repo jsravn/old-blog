@@ -3,7 +3,8 @@ James S. Ravn
 949-690-2903
 james.ravn@gmail.com
 
-Please contact for address.
+1217 Ballantrae Pl. Apt. E
+Mundelein, IL 60060
 
 Education: B.S. Computer Science and Engineering. University of California, 
 Los Angeles (2005). 3.5 GPA.
@@ -55,15 +56,17 @@ Jan. 2006 - Current
   including regression analysis, queuing theory and Markov chains. (Excel, 
   Minitab)
 
-* Created many Python & Ruby scripts for use by team members to automate data 
-  mining tasks. Created batch files to automate the deployment of Ruby on 
-  Rails websites to an IIS/Windows Server. (Python, Ruby, MS Batch)
+* Co-led user trial improvement project, including documentation, training, 
+  and community support.
 
-* Co-led improvement projects for user trials and formal testing.
+* Deployed and modified BugzillaMetrics open source metrics tool, adding 
+  features such as servlet container authentication support. Several patches 
+  were accepted by the upstream maintainer. (Java, J2EE, Google Web Toolkit) 
 
 * Data mining and analysis of various data sources to support data driven 
-  decisions by product managers. Data sources include Oracle, MySQL, MS SQL, 
-  ldap, ClearDDTS, and HTML scraping.
+  decisions by product managers. Created scripts for use by team members to 
+  automate data mining tasks. (Oracle, MySQL, MS SQL, ldap, ClearDDTS, HTML 
+  scraping)
 
 Software Engineer, Signal Transport (Irvine, CA)
 Sept. 2005 - Jan. 2006
