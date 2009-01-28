@@ -9,18 +9,19 @@ web: http://jsravn.com
 
 Skills Overview
 
-* Languages: C, Ruby, Java, SQL (Ansi, PL/SQL), JavaScript, HTML (4.x, XHTML), CSS
+* Languages: C, Ruby, Java, SQL, JavaScript, HTML (4.x, XHTML), CSS
 * Frameworks: Ruby on Rails, ASP, AJAX (Prototype, Scriptaculous), J2EE (Tomcat, Servlets)
 * Technologies: Databases (Oracle, MySQL, MS SQL), REST (Rails), Concurrency (Java, Ruby)
-* Practices: Test driven development (JUnit, test/unit), Version control (git, svn, bzr), Design patterns, UML
-* Tools: Emacs, Eclipse, Visual Studio, Excel, Git, Subversion (svn), Bazaar (bzr), Cygwin, Autotools, LyX
+* Practices: Test driven development (JUnit, test/unit), Version control (git, svn, bzr), Object Oriented Design (Design patterns, UML)
+* Tools: Emacs, Eclipse, Visual Studio, Excel, Git, Subversion (svn), Bazaar (bzr), Cygwin, Autotools, LyX, Capistrano
 * OS: Linux (Ubuntu, Gentoo, Debian), Solaris, Windows
+* Application Servers: Apache, Tomcat, Mongrel, IIS
 * Statistical: Data analysis (Excel, Minitab), Linear regression, Discrete event simulation, Monte Carlo, Neural Nets
 
 Experience
 
 Senior Software Engineer, Motorola Mobile Devices (Libertyville, IL)
-Jan. 2006 – Current
+Jan. 2006 - Current
 
 * Rated in the top 10% of the company in my annual performance review. Received a fast promotion to Senior Software Engineer after 10 months with the company, a position typically reserved for someone with 2-3 years of experience.
 * Designed and created several web applications for management of the software organization. Worked closely with my customers and used an iterative style of development, releasing changes early and often. Created RESTful web front ends, allowing data to be accessed in many formats in a standard way. (ASP, Ruby on Rails, AJAX)
@@ -30,7 +31,7 @@ Jan. 2006 – Current
 * Data mining and analysis of various data sources to support data driven decisions by product managers. Created scripts to automate data mining tasks. (Oracle, MySQL, MS SQL, ldap, ClearDDTS, HTML scraping, Ruby) 
 
 Software Engineer, Signal Transport (Irvine, CA)
-Sept. 2005 – Jan. 2006
+Sept. 2005 - Jan. 2006
 
 * Designed and implemented a public website for a new product line. (Ruby on Rails)
 
