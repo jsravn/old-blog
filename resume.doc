@@ -9,7 +9,7 @@
 {\f166\fmodern\fcharset163\fprq1 Courier New (Vietnamese);}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;
 \red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{
 \ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext0 Normal;}{\*\cs10 \additive \ssemihidden 
-Default Paragraph Font;}{\*\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tblind0\tblindtype3\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+Default Paragraph Font;}{\*\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\tblind0\tblindtype3\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
 \ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20 \ltrch\fcs0 \fs20\lang1024\langfe1024\cgrid\langnp1024\langfenp1024 \snext11 \ssemihidden Normal Table;}{
 \s15\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs24\alang1025 \ltrch\fcs0 \f37\fs24\cf1\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext15 Default;}{
 \s16\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \f37\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon15 \snext15 CM5;}{\s17\ql \li0\ri0\sl240\slmult0
@@ -61,15 +61,15 @@ Default Paragraph Font;}{\*\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpad
 \leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698693
 \'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid1870097111}}{\*\listoverridetable{\listoverride\listid-909414541\listoverridecount0\ls1}{\listoverride\listid1343191060\listoverridecount0\ls2}
 {\listoverride\listid-1771704755\listoverridecount0\ls3}{\listoverride\listid1542205464\listoverridecount0\ls4}{\listoverride\listid625966928\listoverridecount0\ls5}{\listoverride\listid1870097111\listoverridecount0\ls6}}{\*\rsidtbl \rsid1130265
-\rsid2768106\rsid4866042\rsid5589534\rsid5781610\rsid5915114\rsid7160796\rsid7484637\rsid9205393\rsid12011851\rsid12862592\rsid13962194\rsid14628014\rsid14885310\rsid15276873}{\*\generator Microsoft Word 11.0.0000;}{\info{\operator w30345}
-{\creatim\yr2009\mo1\dy20\hr17\min52}{\revtim\yr2009\mo1\dy27\hr16\min42}{\version13}{\edmins60}{\nofpages1}{\nofwords504}{\nofchars2875}{\nofcharsws3373}{\vern24613}{\*\password 00000000}}{\*\xmlnstbl {\xmlns1 http://schemas.microsoft.com/office/word/200
-3/wordml}{\xmlns2 urn:schemas-microsoft-com:office:smarttags}}\paperw12240\paperh16340\margl504\margr504\margt432\margb216\gutter0\ltrsect 
+\rsid2768106\rsid3036127\rsid4866042\rsid5589534\rsid5781610\rsid5915114\rsid7160796\rsid7484637\rsid9205393\rsid11694028\rsid12011851\rsid12856180\rsid12862592\rsid13962194\rsid14628014\rsid14885310\rsid14897628\rsid15088601\rsid15276873}{\*\generator Mi
+crosoft Word 11.0.0000;}{\info{\operator w30345}{\creatim\yr2009\mo1\dy20\hr17\min52}{\revtim\yr2009\mo1\dy27\hr20\min27}{\version19}{\edmins209}{\nofpages1}{\nofwords498}{\nofchars2841}{\nofcharsws3333}{\vern24613}{\*\password 00000000}}
+{\*\xmlnstbl {\xmlns1 http://schemas.microsoft.com/office/word/2003/wordml}{\xmlns2 urn:schemas-microsoft-com:office:smarttags}}\paperw12240\paperh16340\margl504\margr504\margt432\margb216\gutter0\ltrsect 
 \widowctrl\ftnbj\aenddoc\donotembedsysfont0\donotembedlingdata1\grfdocevents0\validatexml0\showplaceholdtext0\ignoremixedcontent0\saveinvalidxml0\showxmlerrors0\horzdoc\dghspace120\dgvspace120\dghorigin1701\dgvorigin1984\dghshow0\dgvshow3
 \jcompress\viewkind1\viewscale100\rsidroot14628014 \fet0{\*\wgrffmtfilter 013f}\ilfomacatclnup0\ltrpar \sectd \ltrsect\linex0\sectdefaultcl\sectrsid5915114\sftnbj {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2
 \pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6
 \pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang 
 {\pntxtb (}{\pntxta )}}\pard\plain \ltrpar\s15\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs24\alang1025 \ltrch\fcs0 \f37\fs24\cf1\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37 \ltrch\fcs0 
-\lang1024\langfe1024\noproof\insrsid9205393 {\shp{\*\shpinst\shpleft8997\shptop-166\shpright11567\shpbottom434\shpfhdr0\shpbxcolumn\shpbxignore\shpbypara\shpbyignore\shpwr3\shpwrk0\shpfblwtxt0\shpz1\shplid1026
+\lang1024\langfe1024\noproof\insrsid12856180 {\shp{\*\shpinst\shpleft8997\shptop-166\shpright11567\shpbottom434\shpfhdr0\shpbxcolumn\shpbxignore\shpbypara\shpbyignore\shpwr3\shpwrk0\shpfblwtxt0\shpz1\shplid1026
 {\sp{\sn shapeType}{\sv 202}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}{\sp{\sn lTxid}{\sv 65536}}{\sp{\sn hspNext}{\sv 1026}}{\sp{\sn fRecolorFillAsPicture}{\sv 0}}
 {\sp{\sn fUseShapeAnchor}{\sv 0}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fLayoutInCell}{\sv 1}}{\sp{\sn fLayoutInCell}{\sv 1}}{\shptxt \ltrpar \pard\plain \ltrpar
 \ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid14885310 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 
@@ -82,15 +82,15 @@ Default Paragraph Font;}{\*\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpad
 {\shp{\*\shpinst\shpleft-173\shptop-164\shpright2467\shpbottom436\shpfhdr0\shpbxcolumn\shpbxignore\shpbypara\shpbyignore\shpwr3\shpwrk0\shpfblwtxt0\shpz0\shplid1027{\sp{\sn shapeType}{\sv 202}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}
 {\sp{\sn lTxid}{\sv 131072}}{\sp{\sn hspNext}{\sv 1027}}{\sp{\sn fRecolorFillAsPicture}{\sv 0}}{\sp{\sn fUseShapeAnchor}{\sv 0}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fLayoutInCell}{\sv 1}}{\sp{\sn fLayoutInCell}{\sv 1}}{\shptxt \ltrpar \pard\plain \ltrpar
 \ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 
-\f1\fs20\insrsid14628014\charrsid14628014 {\*\xmlopen\xmlns2{\factoidname Street}}{\*\xmlopen\xmlns2{\factoidname address}}1217 Ballantrae Pl.{\*\xmlclose}{\*\xmlclose} Apt. E}{\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 
+\f1\fs20\insrsid14628014\charrsid14628014 {\*\xmlopen\xmlns2{\factoidname address}}{\*\xmlopen\xmlns2{\factoidname Street}}1217 Ballantrae Pl.{\*\xmlclose}{\*\xmlclose} Apt. E}{\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 
 \f1\fs20\cf1\insrsid14628014\charrsid14628014 
-\par }{\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\insrsid14628014\charrsid14628014 {\*\xmlopen\xmlns2{\factoidname City}}{\*\xmlopen\xmlns2{\factoidname place}}Mundelein{\*\xmlclose}, {\*\xmlopen\xmlns2{\factoidname State}}{\*\xmlopen\xmlns2{\factoidname 
-PostalCode}}IL{\*\xmlclose}{\*\xmlclose} {\*\xmlopen\xmlns2{\factoidname PostalCode}}60060}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid14628014\charrsid14628014 {\*\xmlclose}{\*\xmlclose}
+\par }{\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\insrsid14628014\charrsid14628014 {\*\xmlopen\xmlns2{\factoidname place}}{\*\xmlopen\xmlns2{\factoidname place}}{\*\xmlopen\xmlns2{\factoidname City}}Mundelein{\*\xmlclose}, {\*\xmlopen\xmlns2{\factoidname 
+place}}{\*\xmlopen\xmlns2{\factoidname place}}IL{\*\xmlclose}{\*\xmlclose} {\*\xmlopen\xmlns2{\factoidname place}}60060}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid14628014\charrsid14628014 {\*\xmlclose}{\*\xmlclose}{\*\xmlclose}
 \par }}}{\shprslt{\*\do\dobxcolumn\dobypara\dodhgt8192\dptxbx\dptxlrtb{\dptxbxtext\ltrpar \pard\plain \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 
-\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\insrsid14628014\charrsid14628014 {\*\xmlopen\xmlns2{\factoidname Street}}{\*\xmlopen\xmlns2{\factoidname address}}1217 Ballantrae Pl.{\*\xmlclose}
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\insrsid14628014\charrsid14628014 {\*\xmlopen\xmlns2{\factoidname address}}{\*\xmlopen\xmlns2{\factoidname Street}}1217 Ballantrae Pl.{\*\xmlclose}
 {\*\xmlclose} Apt. E}{\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\cf1\insrsid14628014\charrsid14628014 
-\par }{\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\insrsid14628014\charrsid14628014 {\*\xmlopen\xmlns2{\factoidname City}}{\*\xmlopen\xmlns2{\factoidname place}}Mundelein{\*\xmlclose}, {\*\xmlopen\xmlns2{\factoidname State}}{\*\xmlopen\xmlns2{\factoidname 
-PostalCode}}IL{\*\xmlclose}{\*\xmlclose} {\*\xmlopen\xmlns2{\factoidname PostalCode}}60060}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid14628014\charrsid14628014 {\*\xmlclose}{\*\xmlclose}
+\par }{\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\insrsid14628014\charrsid14628014 {\*\xmlopen\xmlns2{\factoidname place}}{\*\xmlopen\xmlns2{\factoidname place}}{\*\xmlopen\xmlns2{\factoidname City}}Mundelein{\*\xmlclose}, {\*\xmlopen\xmlns2{\factoidname 
+place}}{\*\xmlopen\xmlns2{\factoidname place}}IL{\*\xmlclose}{\*\xmlclose} {\*\xmlopen\xmlns2{\factoidname place}}60060}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid14628014\charrsid14628014 {\*\xmlclose}{\*\xmlclose}{\*\xmlclose}
 \par }}\dpx-173\dpy-164\dpxsize2640\dpysize600\dpfillfgcr255\dpfillfgcg255\dpfillfgcb255\dpfillbgcr255\dpfillbgcg255\dpfillbgcb255\dpfillpat1\dplinehollow}}}}{\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\insrsid5915114\charrsid14885310   
 \par 
 \par }\pard \ltrpar\s15\qc \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid14885310 {\rtlch\fcs1 \af1\afs34 \ltrch\fcs0 \f1\fs34\insrsid14885310 James S. Ravn}{\rtlch\fcs1 \af1\afs34 \ltrch\fcs0 \f1\fs34\insrsid14885310\charrsid14885310 
@@ -99,7 +99,7 @@ PostalCode}}IL{\*\xmlclose}{\*\xmlclose} {\*\xmlopen\xmlns2{\factoidname PostalC
 :\tab B.S. Computer Science and Engineering. {\*\xmlopen\xmlns2{\factoidname PlaceType}}University{\*\xmlclose} of {\*\xmlopen\xmlns2{\factoidname PlaceName}}California{\*\xmlclose}, {\*\xmlopen\xmlns2{\factoidname City}}{\*\xmlopen\xmlns2{\factoidname 
 place}}Los Angeles{\*\xmlclose}{\*\xmlclose} (2005). 3.5 GPA.
 \par }\pard \ltrpar\s15\ql \li0\ri0\nowidctlpar\tx270\tx1890\wrapdefault\faauto\rin0\lin0\itap0\pararsid14885310 {\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\cf0\insrsid14885310 \tab \tab }{\rtlch\fcs1 \af38\afs20 \ltrch\fcs0 \f38\fs20\insrsid14885310 
-Graduate computer science classes at {\*\xmlopen\xmlns2{\factoidname PlaceName}}{\*\xmlopen\xmlns2{\factoidname PlaceName}}{\*\xmlopen\xmlns2{\factoidname place}}DePaul{\*\xmlclose} {\*\xmlopen\xmlns2{\factoidname PlaceType}}University{\*\xmlclose}
+Graduate computer science classes at {\*\xmlopen\xmlns2{\factoidname PlaceName}}{\*\xmlopen\xmlns2{\factoidname place}}{\*\xmlopen\xmlns2{\factoidname PlaceName}}DePaul{\*\xmlclose} {\*\xmlopen\xmlns2{\factoidname PlaceType}}University{\*\xmlclose}
 {\*\xmlclose}{\*\xmlclose} (5 classes, 2006-2008). 4.0 GPA.}{\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\cf0\insrsid14885310\charrsid14885310 
 \par }\pard \ltrpar\s15\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\cf0\insrsid5915114 
 \par }\pard \ltrpar\s15\ql \li0\ri0\nowidctlpar\tx540\wrapdefault\faauto\rin0\lin0\itap0\pararsid14885310 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\cf0\insrsid14885310\charrsid14885310 Skills Overview}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\cf0\insrsid14885310 
@@ -107,20 +107,22 @@ Graduate computer science classes at {\*\xmlopen\xmlns2{\factoidname PlaceName}}
 \par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f3\fs20\insrsid14885310 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \ltrpar\s15\ql \fi-360\li630\ri0\sl360\slmult1\nowidctlpar\wrapdefault\faauto\ls5\rin0\lin630\itap0\pararsid2768106 {
 \rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\cf0\insrsid14885310 Programming: C, Ruby, Java
 \par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f3\fs20\insrsid14885310 \loch\af3\dbch\af0\hich\f3 \'b7\tab}Technologies: Ruby on Rails, ASP}{\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\cf0\insrsid4866042 ,}{\rtlch\fcs1 \af1\afs20 
-\ltrch\fcs0 \f1\fs20\cf0\insrsid14885310  {\*\xmlopen\xmlns2{\factoidname City}}{\*\xmlopen\xmlns2{\factoidname place}}AJAX{\*\xmlclose}{\*\xmlclose}, CSS, Databases, SQL, REST, Concurrency}{\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873 
+\ltrch\fcs0 \f1\fs20\cf0\insrsid14885310  {\*\xmlopen\xmlns2{\factoidname place}}{\*\xmlopen\xmlns2{\factoidname City}}AJAX{\*\xmlclose}{\*\xmlclose}, Databases, SQL, REST, Concurrency}{\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873 
 
 \par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f3\fs20\insrsid15276873 \loch\af3\dbch\af0\hich\f3 \'b7\tab}Practices: Test and behavior driven development, Version control, Design patterns, UML
-\par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f3\fs20\insrsid15276873 \loch\af3\dbch\af0\hich\f3 \'b7\tab}Additional: Data mining and analysis, Discrete event simulation, {\*\xmlopen\xmlns2{\factoidname place}}
-{\*\xmlopen\xmlns2{\factoidname place}}Monte Carlo{\*\xmlclose}{\*\xmlclose}
+\par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f3\fs20\insrsid3036127 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \ltrpar\s15\ql \fi-360\li630\ri0\sl360\slmult1\nowidctlpar\wrapdefault\faauto\ls5\rin0\lin630\itap0\pararsid3036127 {
+\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\cf0\insrsid3036127 Tools: }{\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\cf0\insrsid3036127\charrsid3036127 Emacs, Eclipse, Visual Studio, Excel, Git, Subversion, Bazaar, Cygwin, Linux, Autotools}{\rtlch\fcs1 
+\af1\afs20 \ltrch\fcs0 \f1\fs20\cf0\insrsid3036127 
+\par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f3\fs20\insrsid15276873 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \ltrpar\s15\ql \fi-360\li630\ri0\sl360\slmult1\nowidctlpar\wrapdefault\faauto\ls5\rin0\lin630\itap0\pararsid2768106 {
+\rtlch\fcs1 \af1\afs20 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873 Additional: Data mining and analysis, Discrete event simulation, {\*\xmlopen\xmlns2{\factoidname City}}{\*\xmlopen\xmlns2{\factoidname place}}Monte Carlo{\*\xmlclose}{\*\xmlclose}
 \par }\pard \ltrpar\s15\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid15276873 {\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\cf0\insrsid2768106 \line }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\cf0\insrsid15276873 Experience
 \par }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\insrsid15276873 
-\par Senior Software Engineer, Motorola Mobile Devices ({\*\xmlopen\xmlns2{\factoidname place}}{\*\xmlopen\xmlns2{\factoidname place}}{\*\xmlopen\xmlns2{\factoidname place}}Libertyville{\*\xmlclose}, {\*\xmlopen\xmlns2{\factoidname place}}IL{\*\xmlclose}
-{\*\xmlclose}{\*\xmlclose})
+\par Senior Software Engineer, Motorola Mobile Devices ({\*\xmlopen\xmlns2{\factoidname place}}{\*\xmlopen\xmlns2{\factoidname City}}Libertyville{\*\xmlclose}, {\*\xmlopen\xmlns2{\factoidname State}}IL{\*\xmlclose}{\*\xmlclose})
 \par Jan. 2006 \endash  Current
 \par 
 \par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af37 \ltrch\fcs0 \f3\fs20\insrsid15276873\charrsid15276873 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \ltrpar
-\s15\ql \fi-360\li630\ri0\sa120\nowidctlpar\wrapdefault\faauto\ls5\rin0\lin630\itap0\pararsid2768106 {\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 Rated in the top 10% of the company in my annual performance rev
-iew. Received a fast promotion to Senior}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873  }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 
+\s15\ql \fi-360\li630\ri0\sa120\nowidctlpar\wrapdefault\faauto\ls5\rin0\lin630\itap0\pararsid2768106 {\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 
+Rated in the top 10% of the company in my annual performance review. Received a fast promotion to Senior}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873  }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 
 Software Engineer after 10 months with the company, a position typically reserved for someone with 2-3 years of experience.}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873 
 \par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af37 \ltrch\fcs0 \f3\fs20\insrsid15276873\charrsid15276873 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 
 Created a web tool to automate the approval process for terminating and duplicating software defects. Worked closely with my customers and used an iterative style of development, releasing changes early and often. (Ruby on Rails)}{\rtlch\fcs1 \af37 
@@ -129,23 +131,28 @@ Created a web tool to automate the approval process for terminating and duplicat
 Created a defect tracking tool to work with a legacy database missing key metrics. Created a RESTful web front end, allowing data to be accessed in many formats in a standard way. (ASP, Ruby on Rails)}{\rtlch\fcs1 \af37 \ltrch\fcs0 
 \f1\fs20\cf0\insrsid15276873 
 \par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af37 \ltrch\fcs0 \f3\fs20\insrsid15276873\charrsid15276873 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 
-Adapted a single file ASP tool into a web suite of data mining tools organized by the Model-View-Controller design pattern. These tools use sophisticated SQL queries for legacy databases and produce Excel files with charts and data. (ASP)}{\rtlch\fcs1 
+Adapted a single file ASP tool into a web suite of data mining tools organized by the }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid3036127 MVC}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 
+ design pattern. These tools use sophisticated SQL queries for legacy databases and produce Excel files with charts and data. (ASP)}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873 
+\par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af37 \ltrch\fcs0 \f3\fs20\insrsid15276873 \loch\af3\dbch\af0\hich\f3 \'b7\tab}C}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 reated a}{\rtlch\fcs1 \af37 \ltrch\fcs0 
+\f1\fs20\cf0\insrsid3036127  w}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15088601 eb based system for managing }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 defect backlog plans}{\rtlch\fcs1 \af37 \ltrch\fcs0 
+\f1\fs20\cf0\insrsid15088601  that was used successfully on}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid3036127  our }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 Linux/Java and 3G cell phones. (ASP)}{\rtlch\fcs1 
 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873 
-\par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af37 \ltrch\fcs0 \f3\fs20\insrsid15276873 \loch\af3\dbch\af0\hich\f3 \'b7\tab}C}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 
-reated an automated web based system for managing defect backlog plans. It is used successfully on our Linux/Java and 3G cell phones. (ASP)}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873 
-\par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af37 \ltrch\fcs0 \f3\fs20\insrsid15276873 \loch\af3\dbch\af0\hich\f3 \'b7\tab}C}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 o-designed and implemented several Ex
-cel tools for software defect and ship date estimation that have been used successfully on our Linux/Java and 3G cell phones. Learned many statistical techniques in a short time frame, including regression analysis, queuing theory and Markov chains. (Exce
-l, Minitab)}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873 
+\par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af37 \ltrch\fcs0 \f3\fs20\insrsid15276873 \loch\af3\dbch\af0\hich\f3 \'b7\tab}C}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 o-designed and implemented 
+Excel tools for software defect and ship date}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid3036127  estimation}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 . Learned many st
+atistical techniques in a short time frame, including regression analysis, queuing theory and Markov chains. (Excel, Minitab)}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873 
 \par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af37 \ltrch\fcs0 \f3\fs20\insrsid12862592 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid12862592 
 Co-led user trial improvement project, including documentation, training, and community support.}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873 
 \par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af37 \ltrch\fcs0 \f3\fs20\insrsid9205393\charrsid9205393 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \ltrpar\s15\ql \fi-360\li630\ri0\sa120\nowidctlpar\wrapdefault\faauto\ls5\rin0\lin630\itap0\pararsid5781610 
-{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid9205393\charrsid9205393 Deployed and modified BugzillaMetrics open source metrics tool, adding features such as servlet container authentication support. Several patches were }{\rtlch\fcs1 \af37 
-\ltrch\fcs0 \f1\fs20\cf0\insrsid9205393 accepted by}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid9205393\charrsid9205393  the upstream maintainer. (Java, J2EE, Google Web Toolkit)}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid9205393 
+{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid9205393\charrsid9205393 Deployed and modified BugzillaMetrics open source }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid3036127 t}{\rtlch\fcs1 \af37 \ltrch\fcs0 
+\f1\fs20\cf0\insrsid9205393\charrsid9205393 ool, adding features such as servlet container authentication support. Several patches were }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid9205393 accepted by}{\rtlch\fcs1 \af37 \ltrch\fcs0 
+\f1\fs20\cf0\insrsid9205393\charrsid9205393  the upstream maintainer. (Java, J2EE, Google Web Toolkit)}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid9205393 
 \par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af37 \ltrch\fcs0 \f3\fs20\insrsid15276873\charrsid15276873 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873\charrsid15276873 
-Data mining and analysis of various data sources to support data driven decisions by product managers. }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid12862592\charrsid15276873 Created scripts for use by team members to automate data mining tasks.}{
-\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid12862592  }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid5781610 (Oracle, MySQL, MS SQL, ldap, ClearDDTS, HTML scraping) }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873 
-\par }\pard \ltrpar\s15\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid15276873 {\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873 Software Engineer, Signal Transport ({\*\xmlopen\xmlns2{\factoidname place}}
-{\*\xmlopen\xmlns2{\factoidname place}}Irvine{\*\xmlclose}{\*\xmlclose}, CA)
+Data mining and analysis of various data sources to support data driven decisions by product managers. }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid12862592\charrsid15276873 Created scripts }{\rtlch\fcs1 \af37 \ltrch\fcs0 
+\f1\fs20\cf0\insrsid3036127 to }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid12862592\charrsid15276873 automate data mining tasks.}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid12862592  }{\rtlch\fcs1 \af37 \ltrch\fcs0 
+\f1\fs20\cf0\insrsid5781610 (Oracle, MySQL, MS SQL, ldap, ClearDDTS, HTML scraping}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid3036127 , Ruby}{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid5781610 ) }{\rtlch\fcs1 \af37 \ltrch\fcs0 
+\f1\fs20\cf0\insrsid15276873 
+\par }\pard \ltrpar\s15\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid15276873 {\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid12856180 
+\par }{\rtlch\fcs1 \af37 \ltrch\fcs0 \f1\fs20\cf0\insrsid15276873 Software Engineer, Signal Transport ({\*\xmlopen\xmlns2{\factoidname City}}{\*\xmlopen\xmlns2{\factoidname place}}Irvine{\*\xmlclose}{\*\xmlclose}, CA)
 \par Sept. 2005 \endash  Jan. 2006
 \par 
 \par {\listtext\pard\plain\ltrpar \s15 \rtlch\fcs1 \af37 \ltrch\fcs0 \f3\fs20\insrsid15276873 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \ltrpar\s15\ql \fi-360\li634\ri0\sa100\nowidctlpar\wrapdefault\faauto\ls5\rin0\lin634\itap0\pararsid2768106 {\rtlch\fcs1 
