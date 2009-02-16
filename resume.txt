@@ -1,4 +1,4 @@
-Please e-mail for phone and address.	james.ravn@gmail.com
+﻿E-mail for address and phone number.	james.ravn@gmail.com
  
 James S. Ravn
 web: http://jsravn.com
@@ -11,8 +11,8 @@ Skills Overview
 * Languages: C, Ruby, Java, SQL, JavaScript, HTML (4.x, XHTML), CSS
 * Frameworks: Ruby on Rails, ASP, AJAX (Prototype, Scriptaculous), J2EE (Tomcat, Servlets)
 * Technologies: Databases (Oracle, MySQL, MS SQL), REST (Rails), Concurrency (Java, Ruby)
-* Practices: Test driven development (JUnit, test/unit), Version control (git, svn, bzr), Object Oriented Design (Design patterns, UML)
-* Tools: Emacs, Eclipse, Visual Studio, Excel, Git, Subversion (svn), Bazaar (bzr), Cygwin, Autotools, LyX, Capistrano
+* Practices: Test driven development (JUnit, test/unit), Version control (git, svn, bzr), OO Design (Design patterns, UML)
+* Tools: Emacs, Eclipse, Visual Studio, Excel, Git, Subversion, Bazaar, Cygwin, Autotools, LyX, Capistrano
 * OS: Linux (Ubuntu, Gentoo, Debian), Solaris, Windows
 * Application Servers: Apache, Tomcat, Mongrel, IIS
 * Statistical: Data analysis (Excel, Minitab), Linear regression, Discrete event simulation, Monte Carlo, Neural Nets
@@ -40,6 +40,6 @@ Extra-curricular
 * Co-creator of the Autocomplete Manager, a Firefox addon with 100,000+ downloads. (JavaScript, XUL)
 * Implemented zlib compression of a telnet stream for an open source MUD, following the MCCP protocol. (C)
 * Created a RISC CPU on a Xilinx FPGA and developed assembly programs for it such as quick sort. (Assembly)
-* Created a compiler for a mini Java language using JavaCC, involving language translation steps and grammars. (Java)
+* Created a compiler for a mini Java language using JavaCC. (Java)
 * Implemented a Blackjack AI program using temporal difference backpropagation on a neural net. (Ruby)
 * Created an open source Monte carol/discrete event simulation library. (C, Java)
