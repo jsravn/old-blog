@@ -1,2 +1,0 @@
-#!/bin/bash
-ssh jsravn.com 'cd /var/www && git pull'
