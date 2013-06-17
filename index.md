@@ -16,5 +16,5 @@ Thoughts
 Random stuff
 ============
 
-- [Circle 3.1 MCCP patch](/random/mccp/)
-- [fuhquake rtc patch](http://ezquake.sourceforge.net/docs/?rtc)
+- [Circle 3.1 MCCP patch](/random/mccp/) - mud client compression protocol version 2 support
+- [fuhquake rtc patch](http://ezquake.sourceforge.net/docs/?rtc) - originally for fuhquake, ported to ezquake
