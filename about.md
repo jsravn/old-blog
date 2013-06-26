@@ -3,7 +3,7 @@ layout: default
 title: "About me"
 ---
 
-<img src="/images/james2008.jpg" alt="me" align="right" style="padding:1em;" />
+![Me](/images/james2008.jpg)
 
 About me
 ========

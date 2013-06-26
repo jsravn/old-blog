@@ -126,6 +126,20 @@ ul.posts span {
   border: 0;
 }
 
+.site img {
+  padding: 1em;
+}
+
+.site img:nth-of-type(even) {
+  float: left;
+  padding: 1em;
+}
+
+.site img:nth-of-type(odd) {
+  float: right;
+  padding: 1em;
+}
+
 /*****************************************************************************/
 /*
 /* Posts
