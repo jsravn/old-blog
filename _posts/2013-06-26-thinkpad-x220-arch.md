@@ -60,43 +60,6 @@ with the 10 minute potential data loss it defaults to.
 Power management the hard way
 =============================
 
-I manually configured power management using sysctl, udev, and modprobe rules.
-I've noticed no performance degradation, so I leave these on all the time. I
-purposely avoided the crazy stuff like deep i915 rc6 states since I wanted a
-stable system.
-
-_Note: These manual settings are not compatible with any power saving daemons like
-laptop-mode-tools, which should be disabled._
-
-`/proc/sys/vm/laptop_mode` should be left alone unless you have a mechanical
-disk drive. With an SSD, I would only increase the commit interval and
-dirty_writeback_centisecs options.  I'm happy with the default of 5 seconds, so
-I don't bother setting these at all. But if you're fine with an increased
-chance of data loss, read on.
-
-Increase the flush interval:
-
-{% highlight bash %}
-# /etc/sysctl.d/flush_interval.conf
-# flush dirty pages every 15 seconds, default is 5.
-vm.dirty_writeback_centisecs = 1500
-{% endhighlight %}
-
-And add the commit option to your fstab for ext3/ext4 filesystems:
-
-{% highlight bash %}
-# /etc/fstab
-# sync disk every 15 seconds, default is 5
-LABEL=arch / ext4 rw,relatime,data=ordered,commit=15 0 1
-{% endhighlight %}
-
-This has the effect of reducing the wakeups of the two background writers -
-jbd2 in ext4 and the kernel flushers. The larger these values, the  more likely
-you are to lose data. And with applications that call `fsync` frequently like
-Chromium, I don't expect much of a power saving.
-
-The rest is pretty simple and requires just 3 files.
-
 Disable nmi_watchdog to reduce wakeups:
 
 {% highlight bash %}
@@ -133,6 +96,37 @@ ACTION=="add", SUBSYSTEM=="net", KERNEL=="wlan0|wlp3s0" RUN+="/usr/sbin/iw dev %
 {% endhighlight %}
 
 Reboot your system and you should be set.
+
+Further power tweaks
+====================
+
+I purposely avoided the crazy stuff like deep i915 rc6 states since I wanted a
+stable system. However, one thing you may want to tweak further are the disk
+flush settings. I'm happy with the kernel defaults, so don't bother.
+
+Increase the flush interval:
+
+{% highlight bash %}
+# /etc/sysctl.d/flush_interval.conf
+# flush dirty pages every 15 seconds, default is 5.
+vm.dirty_writeback_centisecs = 1500
+{% endhighlight %}
+
+And add the commit option to your fstab for ext3/ext4 filesystems:
+
+{% highlight bash %}
+# /etc/fstab
+# sync disk every 15 seconds, default is 5
+LABEL=arch / ext4 rw,relatime,data=ordered,commit=15 0 1
+{% endhighlight %}
+
+This has the effect of reducing the wakeups of the two background writers -
+jbd2 in ext4 and the kernel flushers. The larger these values, the  more likely
+you are to lose data. And with applications that call `fsync` frequently like
+Chromium, I don't expect much of a power saving.
+
+`/proc/sys/vm/laptop_mode` should be left alone unless you have a mechanical
+disk drive - in which case, you may be better off using laptop-mode-tools.
 
 A few final system tweaks
 =========================
