@@ -10,7 +10,7 @@ About me
 
 I'm a professional software developer with 2 wonderful kids, a [fluffy
 dog](http://en.wikipedia.org/wiki/Pembroke_Welsh_Corgi), and [amazing
-wife](http://www.prettycitythings.com).
+wife](http://www.livingprettyblog.com).
 
 In my spare time I like to bike, play board games and video games, watch movies,
 listen to music, cook, and a bunch of other stuff.
