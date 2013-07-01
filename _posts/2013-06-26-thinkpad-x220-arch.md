@@ -187,8 +187,8 @@ $ systemctl start tpacpi-bat
 $ systemctl enable tpacpi-bat
 {% endhighlight %}
 
-I'm currently using 40/90, but am still messing with it. It depends a lot on your
-usage pattern and battery size.
+I'm currently using 45/95. It depends a lot on your usage pattern and battery
+size.
 
 That's it
 =========
