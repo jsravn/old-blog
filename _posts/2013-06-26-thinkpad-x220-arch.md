@@ -102,7 +102,7 @@ Further power tweaks
 
 I purposely avoided the crazy stuff like deep i915 rc6 states since I wanted a
 stable system. However, one thing you may want to tweak further are the disk
-flush settings. I'm happy with the kernel defaults, so don't bother.
+flush settings.
 
 Increase the flush interval:
 
@@ -121,9 +121,8 @@ LABEL=arch / ext4 rw,relatime,data=ordered,commit=15 0 1
 {% endhighlight %}
 
 This has the effect of reducing the wakeups of the two background writers -
-jbd2 in ext4 and the kernel flushers. The larger these values, the  more likely
-you are to lose data. And with applications that call `fsync` frequently like
-Chromium, I don't expect much of a power saving.
+jbd2 in ext4 and the kernel flushers. The larger these values, the more likely
+you are to lose data.
 
 `/proc/sys/vm/laptop_mode` should be left alone unless you have a mechanical
 disk drive - in which case, you may be better off using laptop-mode-tools.
@@ -158,7 +157,7 @@ add a weekly job for fstrim:
 fstrim -v /
 {% endhighlight %}
 
-The x220 is on ivy bridge and we can benefit from the
+The x220 is on ivy bridge and can benefit from the
 [Intel Thermal Daemon](https://01.org/linux-thermal-daemon).
 This uses some intel specific kernel features (such as intel_pstate) to keep the
 cpu cores cool under load.
@@ -173,7 +172,23 @@ $ sudo make install
 $ sudo systemctl enable thermald
 $ sudo systemctl start thermald
 {% endhighlight %}
-<br/>
+
+Another nice feature are charge thresholds. They can improve the longevity of
+the battery, particularly if you spend a lot of time on AC power.  We can set
+the thresholds with acpi_call and tpacpi-bat.
+
+
+{% highlight bash %}
+$ yaourt -S acpi_call
+$ yaourt -S tpacpi-bat
+$ cp /usr/lib/systemd/system/tpacpi-bat.service /etc/systemd/system
+$ vim /etc/systemd/system/tpacpi-bat.service # set desired thresholds
+$ systemctl start tpacpi-bat
+$ systemctl enable tpacpi-bat
+{% endhighlight %}
+
+I'm currently using 40/90, but am still messing with it. It depends a lot on your
+usage pattern and battery size.
 
 That's it
 =========
