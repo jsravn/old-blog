@@ -3,13 +3,6 @@ layout: default
 title: James Ravn's Web Base
 ---
 
-News
-====
-
-I'm currently seeking employment in the United Kingdom or Southern California.
-My wife and I want to move back near family after almost 8 wonderful years in
-Chicago.  If interested, please contact me by email.
-
 Thoughts
 ========
 
