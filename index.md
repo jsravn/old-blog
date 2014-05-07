@@ -3,8 +3,7 @@ layout: default
 title: James Ravn's Web Base
 ---
 
-Welcome to my little corner in the web. You'll find here various
-tidbits I've decided to post online.
+Welcome to my little corner in the web.
 
 Thoughts
 ========
@@ -16,8 +15,8 @@ Thoughts
 </ul>
 
 
-Various open source contributions
-=================================
+Open source contributions
+=========================
 
 - [circle 3.1 mccp](/random/mccp/)
 - [fuhquake](http://ezquake.sourceforge.net/docs/?rtc)
