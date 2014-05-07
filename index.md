@@ -3,6 +3,9 @@ layout: default
 title: James Ravn's Web Base
 ---
 
+Welcome to my little corner in the web. You'll find here various
+tidbits I've decided to post online.
+
 Thoughts
 ========
 
@@ -13,8 +16,13 @@ Thoughts
 </ul>
 
 
-Random stuff
-============
+Various open source contributions
+=================================
 
-- [Circle 3.1 MCCP patch](/random/mccp/) - mud client compression protocol version 2 support
-- [fuhquake rtc patch](http://ezquake.sourceforge.net/docs/?rtc) - originally for fuhquake, ported to ezquake
+- [circle 3.1 mccp](/random/mccp/)
+- [fuhquake](http://ezquake.sourceforge.net/docs/?rtc)
+- [crawl](https://gitorious.org/crawl/crawl/commits)
+- [the original omnibar](https://addons.mozilla.org/en-US/firefox/addon/autocomplete-manager/)
+- [darkpawns](https://github.com/rparet/darkpawns)
+- [xmpp-uri](https://github.com/jsravn/xmpp-uri)
+- [sovereign](https://github.com/al3x/sovereign)
