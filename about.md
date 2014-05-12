@@ -15,4 +15,4 @@ wife](http://www.livingprettyblog.com).
 In my spare time I like to bike, play board games and video games, watch movies,
 listen to music, cook, and a bunch of other stuff.
 
-I wrote more about growing up [here]({% post_url 2013-06-16-growing-up %}).
+I wrote more about growing up [here]({% post_url 2013-06-16-more-about-me %}).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Growing up"
+title: "More about me"
 ---
 
 The beginning
