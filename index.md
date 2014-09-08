@@ -3,7 +3,7 @@ layout: default
 title: James Ravn's Web Base
 ---
 
-Welcome to my little corner in the web.
+Welcome to my little corner on the web.
 
 Thoughts
 ========
