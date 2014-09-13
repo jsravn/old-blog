@@ -38,8 +38,16 @@ Now you should be able to reboot into your Arch install without a problem.
 Future runs of grub_install will succeed in adding an arch_grub efi entry but
 this can be safely ignored (or deleted, if you prefer).
 
+Power management (Edit: 2014-09-14)
+==============================================
+
+I no longer enable any of these things. I get very good battery
+performance out of the box (around -10W), and I found these settings
+had no impact. My biggest battery drainers are the screen and
+chromium, which I can do little about.
+
 Power management with laptop mode tools
-=======================================
+---------------------------------------
 
 In the past I always used laptop-mode-tools, but shied away from it in this
 build. I wanted to know exactly what I was tweaking and the consequences of it,
@@ -58,7 +66,7 @@ sure it is configured the way you expect. In particular, I'm not comfortable
 with the 10 minute potential data loss it defaults to.
 
 Power management the hard way
-=============================
+-----------------------------
 
 Disable nmi_watchdog to reduce wakeups:
 
@@ -98,7 +106,7 @@ ACTION=="add", SUBSYSTEM=="net", KERNEL=="wlan0|wlp3s0" RUN+="/usr/sbin/iw dev %
 Reboot your system and you should be set.
 
 Further power tweaks
-====================
+--------------------
 
 I purposely avoided the crazy stuff like deep i915 rc6 states since I wanted a
 stable system. However, one thing you may want to tweak further are the disk
@@ -137,13 +145,7 @@ Let's get rid of the anti-social beeping:
 blacklist pcspkr
 {% endhighlight %}
 
-And disable pm_async which causes [some issues](https://bugzilla.kernel.org/show_bug.cgi?id=58971) with the i915 driver:
-
-{% highlight bash %}
-# /etc/tmpfiles.d/disable-pm-async.conf
-w /sys/power/pm_async - - - - 0
-{% endhighlight %}
-<br/>
+(Edit: 2014-09-10) Disabling pm_async is no longer necessary.
 
 System services
 ===============
@@ -157,10 +159,11 @@ add a weekly job for fstrim:
 fstrim -v /
 {% endhighlight %}
 
+(Edit: 2014-09-10) I no longer use thermald - I got very little
+benefit out of it. But feel free to experiment with it.
+
 The x220 is on ivy bridge and can benefit from the
 [Intel Thermal Daemon](https://01.org/linux-thermal-daemon).
-This uses some intel specific kernel features (such as intel_pstate) to keep the
-cpu cores cool under load.
 
 {% highlight bash %}
 $ git clone https://github.com/01org/thermal_daemon.git
@@ -173,10 +176,19 @@ $ sudo systemctl enable thermald
 $ sudo systemctl start thermald
 {% endhighlight %}
 
+This uses some intel specific kernel features (such as intel_pstate) to keep the
+cpu cores cool under load.
+
+Charge thresholds
+-----------------
+
+(Edit: 2014-09-10) I no longer bother with charge thresholds.
+My first battery died just after a year (common issue with Lenovo
+batteries), so why bother?
+
 Another nice feature are charge thresholds. They can improve the longevity of
 the battery, particularly if you spend a lot of time on AC power.  We can set
 the thresholds with acpi_call and tpacpi-bat.
-
 
 {% highlight bash %}
 $ yaourt -S acpi_call
