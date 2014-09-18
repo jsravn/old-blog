@@ -25,3 +25,4 @@ Open source contributions
 - [darkpawns](https://github.com/rparet/darkpawns)
 - [xmpp-uri](https://github.com/jsravn/xmpp-uri)
 - [sovereign](https://github.com/al3x/sovereign)
+- [jbehave](http://jbehave.org/)
