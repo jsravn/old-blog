@@ -78,4 +78,9 @@ a#pdf:hover { background: #222; }
     {
         display:none;
     }
+
+    .pageBreak
+    {
+        page-break-before: always 
+    }
 }
