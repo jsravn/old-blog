@@ -1,0 +1,400 @@
+diff -up circle-3.1-stock/src/comm.c circle-3.1/src/comm.c
+--- comm.c	2002-11-13 11:02:18.000000000 -0600
++++ comm.c	2008-04-02 17:15:27.953125000 -0500
+@@ -70,6 +70,10 @@
+ #define INVALID_SOCKET (-1)
+ #endif
+ 
++/* MCCP compression defines. */
++#define COMPRESS2 86
++
++
+ /* externs */
+ extern struct ban_list_element *ban_list;
+ extern int num_invalid;
+@@ -116,8 +120,8 @@ RETSIGTYPE unrestrict_game(int sig);
+ RETSIGTYPE reap(int sig);
+ RETSIGTYPE checkpointing(int sig);
+ RETSIGTYPE hupsig(int sig);
+-ssize_t perform_socket_read(socket_t desc, char *read_point,size_t space_left);
+-ssize_t perform_socket_write(socket_t desc, const char *txt,size_t length);
++ssize_t perform_socket_read(socket_t desc, char *read_point, size_t space_left);
++ssize_t perform_socket_write(socket_t desc, const char *txt, size_t length, struct compr *comp);
+ void echo_off(struct descriptor_data *d);
+ void echo_on(struct descriptor_data *d);
+ void circle_sleep(struct timeval *timeout);
+@@ -164,6 +168,18 @@ void Board_clear_all(void);
+ void free_social_messages(void);
+ void Free_Invalid_List(void);
+ 
++
++/* Implementation of required zlib helper functions. */
++void *z_alloc(void *opaque, uInt items, uInt size)
++{
++  return calloc(items, size);
++}
++
++void z_free(void *opaque, void *address)
++{
++  return free(address);
++}
++
+ #ifdef __CXREF__
+ #undef FD_ZERO
+ #undef FD_SET
+@@ -175,7 +191,6 @@ void Free_Invalid_List(void);
+ #define FD_CLR(x, y)
+ #endif
+ 
+-
+ /***********************************************************************
+ *  main game loop and related stuff                                    *
+ ***********************************************************************/
+@@ -767,7 +782,7 @@ void game_loop(socket_t mother_desc)
+     /* Print prompts for other descriptors who had no other output */
+     for (d = descriptor_list; d; d = d->next) {
+       if (!d->has_prompt && d->bufptr == 0) {
+-	write_to_descriptor(d->descriptor, make_prompt(d));
++	write_to_descriptor(d->descriptor, make_prompt(d), d->comp);
+ 	d->has_prompt = TRUE;
+       }
+     }
+@@ -1124,6 +1139,7 @@ size_t vwrite_to_output(struct descripto
+     return (0);
+ 
+   wantsize = size = vsnprintf(txt, sizeof(txt), format, args);
++ 
+   /* If exceeding the size of the buffer, truncate it for the overflow message */
+   if (size < 0 || wantsize >= sizeof(txt)) {
+     size = sizeof(txt) - 1;
+@@ -1292,6 +1308,16 @@ int new_descriptor(socket_t s)
+   struct sockaddr_in peer;
+   struct hostent *from;
+ 
++  /* Initial compression negotiation string. */
++  const char COMPRESS_OFFER[] =
++  {
++    (char) IAC,
++    (char) WILL,
++    (char) COMPRESS2,
++    (char) 0,
++  };
++  
++
+   /* accept the new connection */
+   i = sizeof(peer);
+   if ((desc = accept(s, (struct sockaddr *) &peer, &i)) == INVALID_SOCKET) {
+@@ -1312,7 +1338,7 @@ int new_descriptor(socket_t s)
+     sockets_connected++;
+ 
+   if (sockets_connected >= max_players) {
+-    write_to_descriptor(desc, "Sorry, CircleMUD is full right now... please try again later!\r\n");
++    write_to_descriptor(desc, "Sorry, CircleMUD is full right now... please try again later!\r\n", NULL);
+     CLOSE_SOCKET(desc);
+     return (0);
+   }
+@@ -1361,6 +1387,9 @@ int new_descriptor(socket_t s)
+   newd->bufptr = 0;
+   newd->has_prompt = 1;  /* prompt is part of greetings */
+   STATE(newd) = CON_GET_NAME;
++  CREATE(newd->comp, struct compr, 1);
++  newd->comp->state = 1; /* waiting for compression request from client */
++  newd->comp->stream = NULL;
+ 
+   /*
+    * This isn't exactly optimal but allows us to make a design choice.
+@@ -1377,6 +1406,8 @@ int new_descriptor(socket_t s)
+   newd->next = descriptor_list;
+   descriptor_list = newd;
+ 
++  write_to_output(newd, "%s", COMPRESS_OFFER);
++  
+   write_to_output(newd, "%s", GREETINGS);
+ 
+   return (0);
+@@ -1421,11 +1452,11 @@ int process_output(struct descriptor_dat
+    */
+   if (t->has_prompt) {
+     t->has_prompt = FALSE;
+-    result = write_to_descriptor(t->descriptor, i);
++    result = write_to_descriptor(t->descriptor, i, t->comp);
+     if (result >= 2)
+       result -= 2;
+   } else
+-    result = write_to_descriptor(t->descriptor, osb);
++    result = write_to_descriptor(t->descriptor, osb, t->comp);
+ 
+   if (result < 0) {	/* Oops, fatal error. Bye! */
+     close_socket(t);
+@@ -1532,12 +1563,76 @@ ssize_t perform_socket_write(socket_t de
+ #endif
+ 
+ /* perform_socket_write for all Non-Windows platforms */
+-ssize_t perform_socket_write(socket_t desc, const char *txt, size_t length)
++ssize_t perform_socket_write(socket_t desc, const char *txt, size_t length, struct compr *comp)
+ {
+-  ssize_t result;
+-
+-  result = write(desc, txt, length);
++  ssize_t result = 0;
++  int compr_result, tmp, i, bytes_copied, offset;
++  
++  /* Handle MCCP zlib compression. */
++  if (comp && comp->state == 2) {
++    /* Copy data to input buffer and prevent overflow. */
++    if (comp->size_in + length > comp->total_in)
++      bytes_copied = comp->total_in - comp->size_in;
++    else
++      bytes_copied = length;
++    
++    strncpy((char *)(comp->buff_in + comp->size_in), txt, bytes_copied);
++    comp->size_in += bytes_copied;
+ 
++    /* Set up stream input. */
++    comp->stream->avail_in = comp->size_in;
++    comp->stream->next_in = comp->buff_in;
++    
++    /* Compress all the input, flushing the output buffer when it fills. */
++    do {
++      /* Set up stream output. */
++      comp->stream->avail_out = comp->total_out - comp->size_out;
++      comp->stream->next_out = comp->buff_out + comp->size_out;
++      
++      compr_result = deflate(comp->stream, Z_SYNC_FLUSH);
++      
++      if (compr_result == Z_OK && !(comp->stream->avail_out)) {
++	/* Buffer is full, flush and keep deflating. */
++        compr_result = 1;
++      } else if (compr_result < 0) {  
++	/* Fatal zlib error */
++	result = 0;
++	break;
++      } else {
++	/* All text successfully deflated. */
++	compr_result = 0;
++      }
++    
++      /* Adjust output size. */
++      comp->size_out = comp->total_out - comp->stream->avail_out;
++    
++      /* Flush compressed data in buff_out. */
++      /* If problems are encountered, try re-sending all data. */
++      tmp = 0;
++      while (comp->size_out > 0) {
++	result = write(desc, comp->buff_out + tmp, comp->size_out);
++	if (result < 1) {
++	  /* Unsuccessful write or socket error, let error handling take care of it. */
++	  goto comm_c_exitzlibdo;
++	}
++	comp->size_out -= result;
++	tmp += result;
++      }
++    } while (compr_result);
++comm_c_exitzlibdo:
++    
++    /* Align input buffer with what got compressed. */
++    /* Data in input buffer loses size_in - avail_in bytes. */
++    offset = comp->size_in - comp->stream->avail_in;
++    for (i = offset; i < comp->size_in; i++)
++      comp->buff_in[i - offset] = comp->buff_in[i];
++    comp->size_in = comp->stream->avail_in;
++   
++    if (result > 0)
++	result = bytes_copied;
++  } else 
++    result = write(desc, txt, length);
++    
+   if (result > 0) {
+     /* Write was successful. */
+     return (result);
+@@ -1587,13 +1682,13 @@ ssize_t perform_socket_write(socket_t de
+  * >=0  If all is well and good.
+  *  -1  If an error was encountered, so that the player should be cut off.
+  */
+-int write_to_descriptor(socket_t desc, const char *txt)
++int write_to_descriptor(socket_t desc, const char *txt, struct compr *comp)
+ {
+   ssize_t bytes_written;
+   size_t total = strlen(txt), write_total = 0;
+-
++  
+   while (total > 0) {
+-    bytes_written = perform_socket_write(desc, txt, total);
++    bytes_written = perform_socket_write(desc, txt, total, comp);
+ 
+     if (bytes_written < 0) {
+       /* Fatal error.  Disconnect the player. */
+@@ -1701,9 +1796,35 @@ int process_input(struct descriptor_data
+   int buf_length, failed_subst;
+   ssize_t bytes_read;
+   size_t space_left;
+-  char *ptr, *read_point, *write_point, *nl_pos = NULL;
++  char *ptr, *read_point, *write_point, *nl_pos = NULL, *comp_pos;
+   char tmp[MAX_INPUT_LENGTH];
+ 
++  const char COMPRESS_START[] =
++  {
++    (char) IAC,
++    (char) SB,
++    (char) COMPRESS2,
++    (char) IAC,
++    (char) SE,
++    (char) 0
++  };
++  
++  const char COMPRESS_REQUEST[] =
++  {
++    (char) IAC,
++    (char) DO,
++    (char) COMPRESS2,
++    (char) 0
++  };
++
++  const char NOCOMPRESS_REQUEST[] =
++  {
++    (char) IAC,
++    (char) DONT,
++    (char) COMPRESS2,
++    (char) 0
++  };
++
+   /* first, find the point where we left off reading data */
+   buf_length = strlen(t->inbuf);
+   read_point = t->inbuf + buf_length;
+@@ -1723,9 +1844,45 @@ int process_input(struct descriptor_data
+       return (0);
+ 
+     /* at this point, we know we got some data from the read */
+-
+     *(read_point + bytes_read) = '\0';	/* terminate the string */
+ 
++    /* Check for compression request. */
++    if (t->comp->state == 1 && buf_length + bytes_read >= 3 ) {
++      if ((comp_pos = strstr(t->inbuf, COMPRESS_REQUEST))) {
++	/* Client requested compression. */
++	/* Send start of the compression stream. */
++	write_to_descriptor(t->descriptor, COMPRESS_START, NULL);
++	
++	/* Init the compression stream. */	
++	CREATE(t->comp->stream, z_stream, 1);
++	t->comp->stream->zalloc = z_alloc;
++	t->comp->stream->zfree = z_free;
++	t->comp->stream->opaque = Z_NULL;
++	deflateInit(t->comp->stream, Z_DEFAULT_COMPRESSION);
++
++	/* Init the compression buffers. */
++	CREATE(t->comp->buff_out, Bytef, SMALL_BUFSIZE);
++	t->comp->total_out = SMALL_BUFSIZE;
++	t->comp->size_out = 0;
++	CREATE(t->comp->buff_in, Bytef, SMALL_BUFSIZE);
++	t->comp->total_in = SMALL_BUFSIZE;
++	t->comp->size_in = 0;
++
++	/* Turn compression state on. */
++	t->comp->state = 2;
++	log("MCCP compression successfully negotiated.");
++      } else if ((comp_pos = strstr(t->inbuf, NOCOMPRESS_REQUEST))) {
++	  /* Client requested no compression. */
++	  t->comp->state = 0;
++      }
++
++      /* Remove [no]compression request from descriptor's buffer. */
++      if (comp_pos) {
++	strncpy(comp_pos, comp_pos + 3, space_left - 3);
++	bytes_read -= 3;
++      }
++    }
++
+     /* search for a newline in the data we just read */
+     for (ptr = read_point; *ptr && !nl_pos; ptr++)
+       if (ISNEWL(*ptr))
+@@ -1789,7 +1946,7 @@ int process_input(struct descriptor_data
+       char buffer[MAX_INPUT_LENGTH + 64];
+ 
+       snprintf(buffer, sizeof(buffer), "Line too long.  Truncated to:\r\n%s\r\n", tmp);
+-      if (write_to_descriptor(t->descriptor, buffer) < 0)
++      if (write_to_descriptor(t->descriptor, buffer, t->comp) < 0)
+ 	return (-1);
+     }
+     if (t->snoop_by)
+@@ -1964,6 +2121,16 @@ void close_socket(struct descriptor_data
+   if (d->showstr_count)
+     free(d->showstr_vector);
+ 
++  /* Free compression structures. */
++  if (d->comp->stream) {
++    deflateEnd(d->comp->stream);
++    free(d->comp->stream);
++    free(d->comp->buff_out);
++    free(d->comp->buff_in);
++  }
++  if (d->comp)
++    free(d->comp);  
++      
+   free(d);
+ }
+ 
+diff -up circle-3.1-stock/src/comm.h circle-3.1/src/comm.h
+--- comm.h	2002-06-21 16:24:28.000000000 -0500
++++ comm.h	2008-04-02 11:23:01.668568400 -0500
+@@ -31,7 +31,7 @@ void	act(const char *str, int hide_invis
+ 
+ /* I/O functions */
+ void	write_to_q(const char *txt, struct txt_q *queue, int aliased);
+-int	write_to_descriptor(socket_t desc, const char *txt);
++int	write_to_descriptor(socket_t desc, const char *txt, struct compr *comp);
+ size_t	write_to_output(struct descriptor_data *d, const char *txt, ...) __attribute__ ((format (printf, 2, 3)));
+ size_t	vwrite_to_output(struct descriptor_data *d, const char *format, va_list args);
+ void	string_add(struct descriptor_data *d, char *str);
+
+diff -up circle-3.1-stock/src/structs.h circle-3.1/src/structs.h
+--- structs.h	2002-11-18 12:23:38.000000000 -0600
++++ structs.h	2008-04-02 17:08:38.359375000 -0500
+@@ -976,6 +976,26 @@ struct txt_q {
+    struct txt_block *tail;
+ };
+ 
++/* Compression state structure */
++struct compr {
++  /* Compression state:
++   * 0 - off
++   * 1 - waiting for response
++   * 2 - compression is enabled
++   */
++  int state;
++  
++  Bytef *buff_out;
++  int total_out; /* size of input buffer */
++  int size_out; /* size of data in output buffer */
++  
++  Bytef *buff_in;
++  int total_in; /* size of input buffer */
++  int size_in; /* size of data in input buffer */
++  
++  z_streamp stream;
++};
++    
+ 
+ struct descriptor_data {
+    socket_t	descriptor;	/* file descriptor for socket		*/
+@@ -1008,6 +1028,7 @@ struct descriptor_data {
+    struct descriptor_data *snooping; /* Who is this char snooping	*/
+    struct descriptor_data *snoop_by; /* And who is snooping this char	*/
+    struct descriptor_data *next; /* link to next descriptor		*/
++   struct compr *comp;          /* compression info                     */
+ };
+ 
+ 
+diff -up circle-3.1-stock/src/sysdep.h circle-3.1/src/sysdep.h
+--- sysdep.h	2002-05-17 17:58:42.000000000 -0500
++++ sysdep.h	2008-04-02 11:23:01.731081600 -0500
+@@ -203,6 +203,9 @@ extern void abort (), exit ();
+  
+ /* Header files common to all source files */
+ 
++/* you better have zlib */
++#include <zlib.h>
++
+ #ifdef HAVE_LIMITS_H
+ #include <limits.h>
+ #endif

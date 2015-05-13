@@ -1,0 +1,36 @@
+MCCP2 patch for Circle 3.1
+ver 2.0, 2008-04-02
+by James Ravn - james dot ravn at gmail dot com
+
+CHANGES:
+2.0
+* Re-coded negotiation to be more robust. Fixes some "Vusername" bugs.
+* Use CREATE macros instead of callocs (thanks to fnord from the CWG team). 
+* Better commenting and minor code reformatting.
+* Fixed blatant memory leak when freeing compression structure (thanks to fnord again).
+
+1.0
+* Initial version
+
+OVERVIEW:
+This patch adds MCCP2 support.  See http://www.zuggsoft.com/zmud/mcp.htm for
+information on the protocol.  Most mud clients support MCCP2 these days, and
+it's a great way to cut down on bandwidth usage.  With some testing, I was
+able to get an average of around 80% bandwidth reduction.
+
+This patch is designed to be light weight and transparent. It enables MCCP
+automatically for clients that request it.
+
+INSTALL:
+This patch has been tested to apply cleanly to Circle 3.1.
+
+1) Move patch into the src directory, after you run configure
+2) patch < mccp2_2.0.patch
+3) Add -lz to the LIBS parameter, around line 25 of the Makefile. This is for
+   linking to zlib.
+4) Run make
+
+Zlib must be installed.
+
+TODO:
+* Add zlib dependencies in configure script and sysdep.h

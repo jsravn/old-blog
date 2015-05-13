@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
+title:            James Ravn's Web Base
 locale:           en_US
-url:              
+url:              www.jsravn.com
 
 
 # Jekyll configuration
@@ -26,20 +26,20 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email: 
-  disqus-shortname: 
+  name: James Ravn
+  avatar: james2008.jpg
+  bio: "Geek dad."
+  email: james@r-vn.org
+  disqus-shortname:
   twitter: #username
   facebook: #username
   google:
     plus: #username
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
   github: #username
   stackoverflow: #http://stackoverflow.com/users/123456/username
   linkedin: #username
