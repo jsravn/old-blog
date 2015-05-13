@@ -26,3 +26,4 @@ Open source contributions
 - [xmpp-uri](https://github.com/jsravn/xmpp-uri)
 - [sovereign](https://github.com/al3x/sovereign)
 - [jbehave](http://jbehave.org/)
+- [scm-breeze](https://github.com/ndbroadbent/scm_breeze)

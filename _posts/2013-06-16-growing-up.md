@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Growing up"
+title: "Early days"
 ---
 
 The beginning
