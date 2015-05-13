@@ -3,10 +3,9 @@ layout: home
 title: James Ravn's Web Base
 ---
 
-Welcome to my little corner on the web.
+### Open source
 
-Open source contributions
-=========================
+A few of the projects I've contributed to, small or large:
 
 - [circle 3.1 mccp](/random/mccp/)
 - [fuhquake](http://ezquake.sourceforge.net/docs/?rtc)

@@ -4,7 +4,7 @@ title: "Arch Linux on a Thinkpad X220"
 ---
 
 This is a guide on how I set up Arch/xmonad on my X220. I reviewed the X220 in my
-[previous post](/2013/06/26/thinkpad-x220.html).
+[previous post]({% post_url 2013-06-26-thinkpad-x220 %}).
 
 Install Arch
 ============

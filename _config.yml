@@ -1,13 +1,13 @@
 # Site wide configuration
 
 title:            James Ravn's Web Base
-locale:           en_US
-url:              www.jsravn.com
+locale:           en_GB
+# url:              http://www.jsravn.com
 
 
 # Jekyll configuration
 
-permalink:   /:categories/:title/
+permalink:   date
 markdown:    kramdown
 highlighter: pygments
 sass:
@@ -28,7 +28,7 @@ kramdown:
 owner:
   name: James Ravn
   avatar: james2008.jpg
-  bio: "Geek dad."
+  bio: "Software engineer in London."
   email: james@r-vn.org
   disqus-shortname:
   twitter: #username
@@ -40,9 +40,9 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: jsravn
   stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: jsravn
   xing: #username
   instagram: #username
   lastfm: #username
@@ -57,4 +57,4 @@ owner:
   flickr: #username
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
