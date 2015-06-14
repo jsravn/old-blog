@@ -3,9 +3,6 @@ layout: post
 title: "Early days"
 ---
 
-The beginning
-=============
-
 I was born in Johannesburg, South Africa to Jorgen and Shane Ravn. My dad was
 born in Denmark and my mom was born in Rhodesia (now known as Zimbabwe). They
 both immigrated to South Africa as kids where later they met and had me.
