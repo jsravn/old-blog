@@ -12,15 +12,11 @@ During load tests of the fallback behaviour, we starting getting
 really long, crazy timeouts on reads. Investigating cassandra logs
 revealed many of these:
 
-```
- Scanned over 100000 tombstones; query aborted
-```
+    Scanned over 100000 tombstones; query aborted
 
 And a few of these sprinkled in:
 
-```
-org.apache.cassandra.db.filter.TombstoneOverwhelmingException
-```
+    org.apache.cassandra.db.filter.TombstoneOverwhelmingException
 
 Tombstones
 ==========
@@ -92,40 +88,20 @@ Then flush the data to disk:
 
 And dump the sstable:
 
-```
-$ sudo /usr/share/cassandra/tools/bin/sstable2json james-flights-ka-1-Data.db
-```
+    $ sudo /usr/share/cassandra/tools/bin/sstable2json james-flights-ka-1-Data.db
 
 And voila:
 
 {% highlight json %}
-    {
-        "key": "BA1234",
-        "cells": [
-            [
-                "",
-                "",
-                1431547185462964
-            ],
-            [
-                "destinations:_",
-                "destinations:!",
-                1431547185462963,
-                "t",
-                1431547185
-            ],
-            [
-                "destinations:9a31d0b0f9aa11e4828b2f4261da0d90",
-                "4f5244",
-                1431547185462964
-            ],
-            [
-                "destinations:9a31d0b1f9aa11e4828b2f4261da0d90",
-                "4c4852",
-                1431547185462964
-            ]
-        ]
-    }
+{
+  "key": "BA1234",
+  "cells": [
+    ["", "", 1431547185462964],
+    ["destinations:_", "destinations:!", 1431547185462963, "t", 1431547185],
+    ["destinations:9a31d0b0f9aa11e4828b2f4261da0d90", "4f5244", 1431547185462964],
+    ["destinations:9a31d0b1f9aa11e4828b2f4261da0d90", "4c4852", 1431547185462964]
+  ]
+}
 {% endhighlight %}
 
 We see the key, `BA1234`, then an empty column with the sstable row
