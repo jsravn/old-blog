@@ -1,0 +1,11 @@
+---
+layout: page
+title: "Posts"
+tags: sidebar
+---
+<dl>
+  {% for post in site.posts %}
+  <dt><a href="{{ post.url }}">{{ post.title }}</a></dt>
+  <dd>{{ post.content | strip_html | truncatewords: 10 }}</dd>
+  {% endfor %}
+</dl>

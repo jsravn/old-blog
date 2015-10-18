@@ -1,60 +1,13 @@
-# Site wide configuration
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           date
+relative_permalinks: true
 
-title:            James Ravn's Web Base
-locale:           en_GB
-# url:              http://www.jsravn.com
-
-
-# Jekyll configuration
-
-permalink:   date
-markdown:    kramdown
-highlighter: pygments
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-
-# Site owner
-owner:
-  name: James Ravn
-  avatar: james2013.jpg
-  bio: "Software engineer in London."
-  email: james@r-vn.org
-  disqus-shortname:
-  twitter: #username
-  facebook: #username
-  google:
-    plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: jsravn
-  stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: jsravn
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+# Setup
+title:               James Ravn
+tagline:             Web Base
+description:         'Software engineer in London, musing on various things.'
+#url:                 http://www.jsravn.com
+paginate:            1
+#baseurl:             ''
