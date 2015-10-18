@@ -6,15 +6,13 @@ title: "Arch Linux on a Thinkpad X220"
 This is a guide on how I set up Arch/xmonad on my X220. I reviewed the X220 in my
 [previous post]({% post_url 2013-06-26-thinkpad-x220 %}).
 
-Install Arch
-============
+## Install Arch
 
 First, of course, do all the usual stuff in the
 [Installation Guide](https://wiki.archlinux.org/index.php/Installation_Guide).
 The only tricky part is dealing with UEFI.
 
-UEFI Boot
-=========
+## UEFI Boot
 
 The x220 is a UEFI based bios, so you need to boot your installed system via
 UEFI. This is still a somewhat hacky process (at least, compared to traditional
@@ -38,16 +36,14 @@ Now you should be able to reboot into your Arch install without a problem.
 Future runs of grub_install will succeed in adding an arch_grub efi entry but
 this can be safely ignored (or deleted, if you prefer).
 
-Power management (Edit: 2014-09-14)
-==============================================
+## Power management (Edit: 2014-09-14)
 
 I no longer enable any of these things. I get very good battery
 performance out of the box (around -10W), and I found these settings
 had no impact. My biggest battery drainers are the screen and
 chromium, which I can do little about.
 
-Power management with laptop mode tools
----------------------------------------
+## Power management with laptop mode tools
 
 In the past I always used laptop-mode-tools, but shied away from it in this
 build. I wanted to know exactly what I was tweaking and the consequences of it,
@@ -65,8 +61,7 @@ You may want to do a quick inspection of the laptop-mode conf files to make
 sure it is configured the way you expect. In particular, I'm not comfortable
 with the 10 minute potential data loss it defaults to.
 
-Power management the hard way
------------------------------
+## Power management the hard way
 
 Disable nmi_watchdog to reduce wakeups:
 
@@ -105,8 +100,7 @@ ACTION=="add", SUBSYSTEM=="net", KERNEL=="wlan0|wlp3s0" RUN+="/usr/sbin/iw dev %
 
 Reboot your system and you should be set.
 
-Further power tweaks
---------------------
+### Further power tweaks
 
 I purposely avoided the crazy stuff like deep i915 rc6 states since I wanted a
 stable system. However, one thing you may want to tweak further are the disk
@@ -135,8 +129,7 @@ you are to lose data.
 `/proc/sys/vm/laptop_mode` should be left alone unless you have a mechanical
 disk drive - in which case, you may be better off using laptop-mode-tools.
 
-A few final system tweaks
-=========================
+## A few final system tweaks
 
 Let's get rid of the anti-social beeping:
 
@@ -147,8 +140,7 @@ blacklist pcspkr
 
 (Edit: 2014-09-10) Disabling pm_async is no longer necessary.
 
-System services
-===============
+## System services
 
 Since I have an SSD, I want to run fstrim occasionally. Install `cronie` and
 add a weekly job for fstrim:
@@ -179,8 +171,7 @@ $ sudo systemctl start thermald
 This uses some intel specific kernel features (such as intel_pstate) to keep the
 cpu cores cool under load.
 
-Charge thresholds
------------------
+### Charge thresholds
 
 (Edit: 2014-09-10) I no longer bother with charge thresholds.
 My first battery died just after a year (common issue with Lenovo
@@ -202,8 +193,7 @@ $ systemctl enable tpacpi-bat
 I'm currently using 45/95. It depends a lot on your usage pattern and battery
 size.
 
-That's it
-=========
+## That's it
 
 And that's it for the system setup. In my next post I'll cover how I set up my
 user environment, including xmonad.

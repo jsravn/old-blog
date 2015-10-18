@@ -16,8 +16,7 @@ company share, secured a work visa and we immigrated shortly later. I was
 about 3.  It was a big journey, being financially and emotionally tough for my
 parents.
 
-Lots of different places
-======
+## Lots of different places
 
 Finding work in an unfamiliar country can be tough, especially for an immigrant
 on a work visa. I spent much of my childhood traveling across the states, as my
@@ -40,8 +39,7 @@ I made a lot of friends while traveling around, and thanks to IM (icq, aim,
 gtalk), have kept in contact with many of them. Without that technology I
 would probably have lost touch with these people.
 
-The PC
-======
+## The PC
 
 When I was about 10, my family bought a shiny new IBM i386 PC (my mom worked
 for IBM at the time as a programmer). I thought it was the coolest thing ever.
@@ -64,8 +62,7 @@ later migrated to the nationwide systems, like Prodigy, before finally the
 internet replaced it all. I'm really lucky to have been part of that brief
 spurt of pre-internet history, it was something magical.
 
-Becoming a programmer
-=====================
+## Becoming a programmer
 
 In high school I started diving into C and C++. I also had a TI-82 calculator
 and TI games were all the rage at the time. I created a game or two that got
@@ -82,8 +79,7 @@ lot more about it. Apart from class work, I spent a good deal of my time
 programming in C on Circle MUDs. At the same time I somehow managed to meet my
 amazing wife and fool her into marrying me.
 
-Meeting Lizzie
-==============
+## Meeting Lizzie
 
 When I was writing this page I showed Lizzie a draft and she told me
 sarcastically "I see how much you wrote about your wife". I was just saving the

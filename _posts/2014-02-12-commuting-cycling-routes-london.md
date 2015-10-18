@@ -13,8 +13,7 @@ before too long.
 Finding the right route for me took some trial and error, and I'm
 still improving it. Here's what I have so far.
 
-Marylebone to Fitzrovia
-=======================
+## Marylebone to Fitzrovia
 
 I arrive in Marylebone station:
 
@@ -46,8 +45,7 @@ Getting back to Marylebone is a bit simpler:
 
 Both ways are quite pleasant routes for daily commuting.
 
-Waterloo to Fitzrovia
-=====================
+## Waterloo to Fitzrovia
 
 I took this route when I first moved and was staying with
 relatives. It's nowhere as pleasant as the Marylebone route, it's much
@@ -110,7 +108,6 @@ I never liked coming down Gower when I took this route, but I couldn't
 figure out a nicer way to go. The other dodgy bit is the
 Strand/Lancaster crossing but it's unavoidable.
 
-Some more tips
-==============
+## Some more tips
 
 * You can fit a Brompton between two chair backs on most train lines. It looks like a triangle /\ and you can stick the folded up brompton in there.
