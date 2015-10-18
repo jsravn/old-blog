@@ -18,8 +18,7 @@ And a few of these sprinkled in:
 
     org.apache.cassandra.db.filter.TombstoneOverwhelmingException
 
-Tombstones
-==========
+## Tombstones
 
 A tombstone is cassandra's record of a deletion. Like a typical
 distributed database, it stores all changes as immutable events. It
@@ -30,8 +29,7 @@ flushed, propagated). When a delete occurs of a column or row a
 tombstone event is created which is appended, in a temporal sense, to
 the events that have occurred so far.
 
-Why is this a problem?
-======================
+## Why is this a problem?
 
 Too many tombstones and cassandra goes kaput. Well, more accurately,
 if you scan too many tombstones in a query (100k by default) in later
@@ -51,8 +49,7 @@ in mind repairs need to happen more frequently than the grace period
 to prevent data inconsistencies (as repairs ensure your deletes are
 replicated correctly).
 
-sstable2json
-============
+## sstable2json
 
 Cassandra has a useful utility for getting a representation of the
 actual sstables. In later cassandra versions this is located in
@@ -62,8 +59,7 @@ as reference for its output.
 
 We can use this to see what was going wrong in our case.
 
-Lists
-=====
+## Lists
 
 Cassandra supports a list column type. Let's see what an sstable for a
 list looks like. Create a table with a list type and insert some data:
@@ -119,8 +115,7 @@ changed, but that would require reconstructing all prior sstables for
 'BA1234' (a read). So it just always issues a delete and avoids the
 read.
 
-The danger of writing collections willy nilly
-=============================================
+## The danger of writing collections willy nilly
 
 And so we hit the crux of our issue. On every downstream call we were
 inserting a row of data that included a list column. Even if the data
