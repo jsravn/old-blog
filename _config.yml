@@ -1,13 +1,6 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           date
-relative_permalinks: true
-
-# Setup
 title:               James Ravn
 tagline:             Web Base
 description:         'Software engineer in London, musing on various things.'
-#url:                 http://www.jsravn.com
 paginate:            1
-#baseurl:             ''
+gems:                [jekyll-paginate]
