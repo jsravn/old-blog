@@ -1,6 +1,9 @@
-permalink:           date
-title:               James Ravn
-tagline:             Web Base
-description:         'Software engineer in London, musing on various things.'
-paginate:            1
-gems:                [jekyll-paginate]
+permalink: date
+title: James Ravn
+tagline: Web Base
+description: 'Software engineer in London, musing on various things.'
+paginate: 5
+paginate_path: "/blog/page:num/"
+gems:
+  - jekyll-paginate
+  - jekyll-redirect-from

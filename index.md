@@ -1,28 +1,33 @@
 ---
-layout: page
-title: "About me"
-tags: sidebar
+layout: default
+title: "Home"
+redirect_from:
+  - /about/
+  - /about/index.html
 ---
 
-![Picture of myself](/images/james2013.jpg)
+Welcome to my little corner on the web.
 
-### Background
 I'm a professional software engineer with 2 wonderful kids, a
 [fluffy dog](http://en.wikipedia.org/wiki/Pembroke_Welsh_Corgi), and
 [amazing wife](http://www.livingprettyblog.com). I'm an American expat
-residing in the sunny part of England, in West London. I wrote a bit
-more about my earlier years [here]({% post_url 2013-06-16-growing-up %}).
+residing in the sunny part of England, in West London.
+
+I maintain a [blog](/blog).
 
 ### Professional experience
 
-See my [curriculum vitae](/james-ravn.pdf) and
-[LinkedIn](http://linkedin.com/in/jsravn).
+I've worked in finance, telecom, and media with a range of
+technologies and languages. See my [curriculum vitae](/james-ravn.pdf)
+and [LinkedIn](http://linkedin.com/in/jsravn) for details.
 
-### Open source contributions
+### Projects
 
-See my [github account](https://github.com/jsravn).
+I've done various things outside of a professional setting. See my
+[github account](https://github.com/jsravn) for the stuff I've managed
+to make public.
 
-Some of the projects I've contributed to:
+Some of the projects I've created and contributed to:
 
 - [circle 3.1 mccp](/random/mccp/)
 - [fuhquake](http://ezquake.sourceforge.net/docs/?rtc)
