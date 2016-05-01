@@ -4,3 +4,4 @@ _site
 _asset_bundler_cache
 *~
 *.swp
+.idea
