@@ -15,6 +15,8 @@ codebase that was years in the making. The person I paired with,
 a consultant, wasn't interested in explaining things to me or
 letting me touch the keyboard. It was a very frustrating experience.
 I'm used to diving into new codebases and picking up things quickly.
+Instead, I just sat there unable to contribute much, counting
+down the minutes until the day ended.
 
 # What doesn't kill you...
 
