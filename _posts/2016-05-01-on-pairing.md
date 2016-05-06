@@ -21,7 +21,7 @@ down the minutes until the day ended.
 # What doesn't kill you...
 
 I eventually got the hang of pairing and started to enjoy it.
-The first impression really stuck in my mind though. Pairing can be
+That first impression really stuck in my mind though. Pairing can be
 downright awful when done poorly.
 
 A few things went wrong that day. Pairing, as I understand it,
