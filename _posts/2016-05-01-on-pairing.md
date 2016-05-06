@@ -10,27 +10,22 @@ new. And it's part of why I picked my first role in London.
 
 # Pairing for the first time
 
-That first day of pairing was one of the worst days in my professional life.
-I wasn't allowed to touch the keyboard, I had no idea what was
-going on, the project was years in the making and complex.
-And I was expected to pair successfully with this guy on day 1. He wasn't
-particularly interested in explaining the code to me. I had
-the distinct impression he felt I was slowing him down, and he wanted to
-minimize my impact on his _velocity_. I sat there, overwhelmed with
-the depressing situation of it all, and started counting minutes until I
-got home, for the first time in my career.
+That first day of pairing was pretty bad. It was a complex
+codebase that was years in the making. The person I paired with,
+a consultant, wasn't interested in explaining things to me or
+letting me touch the keyboard. It was a very frustrating experience.
+I'm used to diving into new codebases and picking up things quickly.
 
 # What doesn't kill you...
 
-I got over this episode, and I even managed to contribute significantly
-to that project. I even got the hang of pairing and started to enjoy it.
-But this first impression really stuck in my mind. Pairing is downright
-_hell_ in the wrong hands. But I'm getting ahead of myself.
+I eventually got the hang of pairing and started to enjoy it.
+The first impression really stuck in my mind though. Pairing can be
+downright awful when done poorly.
 
-A few things went wrong that day. Pairing, as Kent Beck described it,
+A few things went wrong that day. Pairing, as I understand it,
 is meant to be done between peers with similar amounts of knowledge.
 I had no on-boarding or mentoring as a new joiner. My first pairing partner
-was not good at pairing and had no interest in being so. This person
+was not good at pairing and didn't have much interest in being so. This person
 really should not have been working in a pairing environment, or been
 assigned to work with me initially.
 
@@ -39,8 +34,8 @@ with another person while trying to think deeply about an engineering
 problem relies on a whole set of brain muscles that I wasn't used to
 using. I like to think of it as _social coding_.
 
-Fortunately, it didn't take me long to learn what good pairing felt like,
-as there were some good people there. It took me probably 6 months to
+Fortunately, there were some good people there, so I was able to develop
+an idea of what good pairing felt like. It took me probably 6 months to
 really get the hang of it.
 
 # The cargo cult is strong
@@ -51,16 +46,19 @@ the companies that pair all the time. It's probably more difficult
 to find a job that doesn't require pairing.
 
 I wouldn't mind this so much, except that I think pairing is hard to get
-right. And it's much worse for individuals when it goes wrong. It is
+right, and there really isn't a convention on the right way to do it.
+And it's much worse for individuals when it goes wrong. It is
 torture to sit and watch someone work while doing nothing for 8
 hours. I've been on both sides of this. On the receiving end when I'm
-new to a team. And doing it when I've been on a team for a while.
+new to a team. And doing it when I've been on a team for a while. When
+experience levels are too different, it's very hard for the other
+person to contribute meaningfully.
 
 Although I try very hard when I realize the other person is not
 engaging, it's not always enough. A good chunk of engineers have
-social anxiety of some form, and it takes time to gel.
-The worst situation is when you don't gel with a team, and then
-pairing can become daily torture.
+social anxiety of some form, and it takes time to gel. It also
+simply takes time for the person to come up to speed and understand
+the project.
 
 An interesting thing about pair programming is it's one of those few XP 
 engineering practices which has been well studied. And the studies
@@ -72,8 +70,7 @@ increased cost.[^1] So why does the cult stick around?
 I believe pair programming can be done right, although it's not easy. I
 think many groups who use it feel like it's a way of completely
 removing process. Just pair and commit directly to master. It's
-continuous code review. We don't need to talk beyond daily pairing
-interaction.
+continuous code review. We don't need any documentation. And so on.
 
 This misses the costs of pairing that need extra attention. Social,
 in-person interaction between team members becomes more crucial. It's
@@ -99,8 +96,10 @@ interaction of pairing. If your team supports external clients, I suggest
 having a solo support role that rotates and can respond without having
 to break the pairing flow.
 
-Accept that not all tasks are ideal to be paired on. For research and
-learning, it can make sense to split up and do research independently.
+Accept that not all tasks are ideal to be paired on. 
+It can be difficult to write up a detailed design doc as a pair.
+For research and learning, it can make sense to split up and do
+research independently.
 
 People also learn differently. Ask newcomers how they learn best. Some
 people would prefer to spend time on their own to get up to speed. When
