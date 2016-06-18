@@ -98,6 +98,4 @@ silver bullet of software engineering.
 
 ***
 
-[^1]: See e.g.
-<http://www.sciencedirect.com/science/article/pii/S0950584909000123> for why
-it's not a silver bullet.
+[^1]: <http://www.sciencedirect.com/science/article/pii/S0950584909000123>
