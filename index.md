@@ -38,4 +38,4 @@ Some of the projects I've contributed to:
 - [jbehave](http://jbehave.org/)
 - [scm-breeze](https://github.com/ndbroadbent/scm_breeze)
 - [kubernetes](https://github.com/kubernetes/kubernetes)
-- [wiremock](https://github.com/tomakehurts/wiremock)
+- [wiremock](https://github.com/tomakehurst/wiremock)
