@@ -31,7 +31,7 @@ Some of the projects I've contributed to:
 
 - [circle 3.1 mccp](/random/mccp/)
 - [fuhquake](http://ezquake.sourceforge.net/docs/?rtc)
-- [crawl](https://gitorious.org/crawl/crawl/commits)
+- [crawl](https://gitorious.org/crawl/crawl/commits?p=crawl:crawl.git;a=summary)
 - [the original omnibar](https://addons.mozilla.org/en-US/firefox/addon/autocomplete-manager/)
 - [darkpawns](https://github.com/rparet/darkpawns)
 - [sovereign](https://github.com/al3x/sovereign)
